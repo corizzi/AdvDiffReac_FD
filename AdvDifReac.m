@@ -1,3 +1,14 @@
+% -----------------------------------------------------------------------------
+%    Copyright Alexandre Corizzi (alexandre.corizzi@gmail.com)
+%
+%    Ce logiciel est régi par la licence CeCILL-B soumise au droit
+%    français et respectant les principes de diffusion des logiciels
+%    libres. Vous pouvez utiliser, modifier et/ou redistribuer ce programme
+%    sous les conditions de la licence CeCILL-B telle que diffusée par
+%    le CEA, le CNRS et l'INRIA sur le site "http://www.cecill.info".
+% -----------------------------------------------------------------------------
+
+
 % -------------------------------------------
 % Finite Difference Method for ADR problems
 % -------------------------------------------
@@ -15,12 +26,12 @@ T = 2 ;
 nbFra = 50 ;
 
 %% Initial Condition
-GRID = gridGen2D( [0 10 ; 0 10], [70 70] )
+GRID = gridGen2D( [0 10 ; 0 10], [50 50] )
 u = gridInter ( GRID, @(x,y) 0  ) ;
 a = GRID.X ; b = GRID.Y ;
 for i=1:GRID.Ny
     for j=1:GRID.Nx
-    if (a(j)-3)^2 + (b(i)-8)^2 < 2^2% || ...
+    if (a(j)-8)^2 + (b(i)-8)^2 < 2^2% || ...
 %       (a(j)-8)^2 + (b(i)-8)^2 < 1^2
 	u(i,j) = 1 ;
 	end
