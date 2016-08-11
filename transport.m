@@ -8,7 +8,7 @@
 %    le CEA, le CNRS et l'INRIA sur le site "http://www.cecill.info".
 % -----------------------------------------------------------------------------
 
-function [A, b] = transport ( GRID, D, v, dt, u0)
+function [A, b] = transport ( GRID, D, v, dt, u0 )
 
 Lx1 = GRID.Lx1  ;
 Lx2 = GRID.Lx2  ;
