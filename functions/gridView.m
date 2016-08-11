@@ -11,7 +11,7 @@
 function [] = gridView( GRID, u, inter )
    
    if size(u, 2) == 1
-       u = gridReshape( GRID, u) ;
+       u = gridReshape( GRID, u ) ;
    end
 
       a = GRID.X ;
