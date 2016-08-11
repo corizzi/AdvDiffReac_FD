@@ -8,7 +8,7 @@
 %    le CEA, le CNRS et l'INRIA sur le site "http://www.cecill.info".
 % -----------------------------------------------------------------------------
 
-function [] = gridView( GRID, u, inter)
+function [] = gridView( GRID, u, inter )
    
    if size(u, 2) == 1
        u = gridReshape( GRID, u) ;
